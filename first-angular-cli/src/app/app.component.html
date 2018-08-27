@@ -3,11 +3,5 @@
 </h1>
 <hr>
 <br/>
-<input type="text" [(ngModel)]="tarefa">
-<button type="button" (click)="add()">Adicionar na Lista</button>
-<!-- Utilizacao da Diretiva ngFor-->
-<ul>
-  <li *ngFor="let item of tarefas">
-    {{ item }}
-  </li>
-</ul>
+<!--Utilizando o componente app-lista-tarefa-->
+<app-lista-tarefa></app-lista-tarefa>
