@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular-cli';
+  titulo = 'Tarefas';
+  tarefas = [];
+  tarefa = "";
+
+  add(): void {
+    this.tarefas.push(this.tarefa);
+  }
 }
