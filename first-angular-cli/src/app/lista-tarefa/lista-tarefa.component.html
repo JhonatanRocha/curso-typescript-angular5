@@ -2,7 +2,12 @@
 <button type="button" (click)="add()">Adicionar na Lista</button>
 <!-- Utilizacao da Diretiva ngFor-->
 <ul>
-  <li *ngFor="let item of tarefas">
-    {{ item }}
-  </li>
+  <li *ngFor="let item of tarefas" [innerHtml]="item"></li>
 </ul>
+<br>
+<div [hidden]="isAdmin">
+  Usuário Comum
+</div>
+<div [hidden]="!isAdmin">
+  Usuário Administrador
+</div>
