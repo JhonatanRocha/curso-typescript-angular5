@@ -31,6 +31,6 @@ export class PersonDao implements DaoInterface {
 
     findAll(): [Person] {
         console.log('Buscando todos os Person no Banco de Dados');
-        return [new Person('Paul Pierce', 29)]
+        return [new Person('Paul Pierce', 29)];
     }
 }
