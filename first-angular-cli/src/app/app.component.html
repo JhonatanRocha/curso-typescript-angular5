@@ -17,3 +17,14 @@
 <p>- Utilizando o Pipe para formatar a Data: <b>{{ dataDeHoje | date : 'dd/MM/yyyy' }}</b></p>
 <br>
 <p>- Utilizando o Pipe para formatar Valor em Dinheiro em Reais: <b>{{ dinheiro | currency : 'BRL' }}</b></p>
+<br>
+<div *ngIf="isAdmin">
+    Usuário Administrador 2
+</div>
+<br>
+<div [ngSwitch]="perfil">
+    <p *ngSwitchCase="1">Utilização do ngSwitch com ngSwitchCase: 1 - Valor do ngSwitch = {{ perfil }}</p>
+    <p *ngSwitchCase="2">Utilização do ngSwitch com ngSwitchCase: 2 - Valor do ngSwitch = {{ perfil }}</p>
+    <p *ngSwitchCase="3">Utilização do ngSwitch com ngSwitchCase: 3 - Valor do ngSwitch = {{ perfil }}</p>
+    <p *ngSwitchDefault>Utilização do ngSwitch com ngSwitchDefault: Valor do ngSwitch = {{ perfil }}</p>
+</div>

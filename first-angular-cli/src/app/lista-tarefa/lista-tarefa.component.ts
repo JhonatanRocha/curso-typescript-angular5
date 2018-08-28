@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListaTarefaComponent {
   tarefas = [];
   tarefa = "";
-  isAdmin = true;
+  isAdmin: boolean = true;
 
   add(): void {
     this.tarefas.push(this.tarefa);
